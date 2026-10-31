@@ -1,6 +1,6 @@
 {
-  "source_zip_sha256": "c323716db50ef68e1568ca1527007374adf6b93e2b5889aabb8f8cc0616de2f7",
-  "file_count": 54,
+  "source_zip_sha256": "ab851fba256a73c45974c82b25c396c9420b616354db2be07f16fae6ac81867a",
+  "file_count": 55,
   "files": [
     {
       "path": "src/micromouse_course/.gitignore",
@@ -100,7 +100,7 @@
     },
     {
       "path": "src/micromouse_course/readme.md",
-      "sha256": "6ee4e5a11758b696f9d801318bd7e3e235ece7b6a0c5dc12e80b2f32c9000dbb"
+      "sha256": "01607b8aba5b099400a387e73ae6d284d9dc50dead85470b75aad4ba4da67dea"
     },
     {
       "path": "src/micromouse_course/resource/micromouse_course",
@@ -113,6 +113,10 @@
     {
       "path": "src/micromouse_course/rviz/model.rviz",
       "sha256": "36854e2a6e9930c94275c32c1d4cc9288f5ac15e4c216778dcadf0fc1b919237"
+    },
+    {
+      "path": "src/micromouse_course/rviz/motion.rviz",
+      "sha256": "a9634b9432c8dd019c6c8ec7fc53056d6869a1583955ca12925f308b7ded20ee"
     },
     {
       "path": "src/micromouse_course/scripts/build.sh",
@@ -192,7 +196,7 @@
     },
     {
       "path": "src/micromouse_course/tools/run_trial.py",
-      "sha256": "bdb2adbe23ae8e7dc553752dd7c5304159f37790aca51c5ba9f350faca7dd532"
+      "sha256": "6505710f7f5b6686a7ba41d1609c753eda784f0be742b3225aa50a03c3e8df80"
     },
     {
       "path": "src/micromouse_course/urdf/burger.urdf.xacro",

@@ -4,7 +4,7 @@ ROS2 Humble 与 TurtleBot3 Burger 的地老鼠走迷宫课程工程，包含基�
 
 作者：向浩轩、杨晟。项目以小组提供的初始思路和代码为基础，经 AI 辅助适配、复核和实验整理。分工与修改范围见 `docs/team.md` 和 `NOTICE.md`。
 
-课程代码：`(2026-2027-1)-S0610350-【班号待补，01/02/03/04】`；组号待补。真实仓库：https://github.com/Bsnbj-nb/micromouse-ros2-course。
+课程代码：`(2026-2027-1)-S0610350-【班号待补，01/02/03/04】`；组号待补。真实仓库：<https://github.com/Bsnbj-nb/micromouse-ros2-course>。
 
 已在 VMware 中的 Ubuntu 22.04.5、ROS2 Humble、Gazebo 11.10.2、gazebo_ros 3.9.0、turtlebot3_description 2.3.6、turtlebot3_gazebo 2.3.8 和 RViz 11.2.29 实际构建与运行；148 项自动检查通过。原始 ROS 记录包含配置、轨迹、状态、扫描地图、真值与 rosbag。单元检查与真实动力学运行分别保存，失败轮次没有删除。
 
@@ -12,7 +12,7 @@ ROS2 Humble 与 TurtleBot3 Burger 的地老鼠走迷宫课程工程，包含基�
 
 [完整源码包（仅 src）](micromouse-source.zip) 包含所有 Python 节点、world、launch、Xacro、参数、RViz 配置、测试及说明；解压后目录为 `src/micromouse_course`。源码包 SHA-256：
 
-`c323716db50ef68e1568ca1527007374adf6b93e2b5889aabb8f8cc0616de2f7`
+`ab851fba256a73c45974c82b25c396c9420b616354db2be07f16fae6ac81867a`
 
 下载后可在 Ubuntu 中执行：
 
@@ -178,4 +178,4 @@ python3 src/micromouse_course/tools/run_trial.py R03 course_maze global --record
 
 ## 开源许可与课程信息
 
-仓库：https://github.com/Bsnbj-nb/micromouse-ros2-course。本项目原创代码按 MIT 许可证发布，已由项目提供者确认；第三方模型与依赖遵守其各自许可证。课程代码末尾班号待组员补充，不能把四个候选班号当作本组的确定班次。
+仓库：<https://github.com/Bsnbj-nb/micromouse-ros2-course>。本项目原创代码按 MIT 许可证发布，已由项目提供者确认；第三方模型与依赖遵守其各自许可证。课程代码末尾班号待组员补充，不能把四个候选班号当作本组的确定班次。

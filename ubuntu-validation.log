@@ -149,15 +149,15 @@ test_maze_is_connected_tree (test_world.WorldTests) ... ok
 test_spawn_has_clearance_and_doorways_fit_burger (test_world.WorldTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 148 tests in 1.846s
+Ran 148 tests in 2.150s
 
 OK
 
 以上为源代码与算法检查，ROS2/Gazebo 实测按执行手册完成。
 Starting >>> micromouse_course
-Finished <<< micromouse_course [1.13s]
+Finished <<< micromouse_course [1.35s]
 
-Summary: 1 package finished [1.40s]
+Summary: 1 package finished [1.61s]
 机器人感知与控制综合实践 环境检查
 当前 Python：/usr/bin/python3
 [PASS] Ubuntu 22.04
