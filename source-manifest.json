@@ -1,0 +1,222 @@
+{
+  "source_zip_sha256": "c323716db50ef68e1568ca1527007374adf6b93e2b5889aabb8f8cc0616de2f7",
+  "file_count": 54,
+  "files": [
+    {
+      "path": "src/micromouse_course/.gitignore",
+      "sha256": "8f1a6e77ad42a1ae9f256ab36dee4064d081133729809236e68aeb83e76fd154"
+    },
+    {
+      "path": "src/micromouse_course/config/bag_qos.yaml",
+      "sha256": "09af6648b4f1f2e6851fc50feaa7f036d26c41ef5cc30edcbbc14bfb9e435b74"
+    },
+    {
+      "path": "src/micromouse_course/config/course.yaml",
+      "sha256": "2db7f75d15d86b2ed8c1810f1e0ecc79b783eb7bbaf61e582f433c0461f3583c"
+    },
+    {
+      "path": "src/micromouse_course/docs/team.md",
+      "sha256": "ddc94fcd0b588364a008d45e0cdd1669c240f933c39a01fef0de392be55bd628"
+    },
+    {
+      "path": "src/micromouse_course/launch/course.launch.py",
+      "sha256": "83d6650da8b4e847aba62d132690a2c13b63eb4036dfe33bc2d61e1d2beeb111"
+    },
+    {
+      "path": "src/micromouse_course/LICENSE",
+      "sha256": "d178746eab2f378ead081e806b9d39e53775a8afbe3a9b88d78cfdb780e3a0d3"
+    },
+    {
+      "path": "src/micromouse_course/micromouse_course/__init__.py",
+      "sha256": "8e1451ee30c117a5618b39fa312d0840429721224446095eac7a9fd66682cf11"
+    },
+    {
+      "path": "src/micromouse_course/micromouse_course/controller_node.py",
+      "sha256": "ed7c74e05c8e4f4bc17681a7ef3e7dd9c5a42b4cdefc784352ffc3cfd75696cd"
+    },
+    {
+      "path": "src/micromouse_course/micromouse_course/core/__init__.py",
+      "sha256": "c8e379b38c2037f6658db4d7190c86f5156f87de93a2a2f54175d2169133fb83"
+    },
+    {
+      "path": "src/micromouse_course/micromouse_course/core/controllers.py",
+      "sha256": "dfb4bf3ac960a3790051b55b727a9e3ee5c2fa1242c0855f8e136d8b584732cd"
+    },
+    {
+      "path": "src/micromouse_course/micromouse_course/core/geometry.py",
+      "sha256": "6078d5dc7b57f08f10cabd4c202315b5ed888c533826ae2727f872fc45c5a64a"
+    },
+    {
+      "path": "src/micromouse_course/micromouse_course/core/scan.py",
+      "sha256": "5a1fb7477ae9ddf1925e02065259e18f187d9ca1c84b2c9365fd0accd9ad256b"
+    },
+    {
+      "path": "src/micromouse_course/micromouse_course/core/types.py",
+      "sha256": "25687c0dd869007fd33a55a139df02cf1e01213c773a752da033a9dd6abef92a"
+    },
+    {
+      "path": "src/micromouse_course/micromouse_course/core/wall_follower.py",
+      "sha256": "dc2a7036d048d7fc4f5442af60dbfc9d3671aa1d0fa94e9fd7e62f72a7fde0c2"
+    },
+    {
+      "path": "src/micromouse_course/micromouse_course/grid.py",
+      "sha256": "143ae786d1b7e09b5980f24c217ecd18b4ac2b07cc23c1823c85fe60913767b8"
+    },
+    {
+      "path": "src/micromouse_course/micromouse_course/mapping_node.py",
+      "sha256": "ff66f1a72747013c34fc498538da0e9cd1a8b3a5067c8779d406cb24bc2fa295"
+    },
+    {
+      "path": "src/micromouse_course/micromouse_course/metrics.py",
+      "sha256": "49700cf11adf50015637fd88195aeb2b1ef0e535b9afe6981863ce0f3eae6690"
+    },
+    {
+      "path": "src/micromouse_course/micromouse_course/planner_node.py",
+      "sha256": "48fc806b15df8a081bfec8291e63e721071a4e91091d4bb8a8bafe8a6333bf35"
+    },
+    {
+      "path": "src/micromouse_course/micromouse_course/runtime.py",
+      "sha256": "22f4f68e19395da87de8682ce95bbd274cab0dcc0fde75a981e776e07aa8f51e"
+    },
+    {
+      "path": "src/micromouse_course/micromouse_course/send_goal.py",
+      "sha256": "836028608892b9e5b1cbb78c55890f5cb98f27687536f4ccb1ae4de59962f6ca"
+    },
+    {
+      "path": "src/micromouse_course/micromouse_course/teleop_node.py",
+      "sha256": "cc55e43f8209ba914ef5f7671ca0525b433c12e14a743c37326dac6436a8e32f"
+    },
+    {
+      "path": "src/micromouse_course/micromouse_course/truth_recorder.py",
+      "sha256": "462a657a8e19c96029a5ee29ef9ede22cb9ae6a3adc09699cf9ec2d4ba77376f"
+    },
+    {
+      "path": "src/micromouse_course/NOTICE.md",
+      "sha256": "56f228fc1bf0083bcf3118a4331f0a4b082e3ea5b51dc955a80985a1547f901b"
+    },
+    {
+      "path": "src/micromouse_course/package.xml",
+      "sha256": "d21a8518a525d0f418099ebcd00701e317587d45c2a0452ceb6aae73fd024f8a"
+    },
+    {
+      "path": "src/micromouse_course/readme.md",
+      "sha256": "6ee4e5a11758b696f9d801318bd7e3e235ece7b6a0c5dc12e80b2f32c9000dbb"
+    },
+    {
+      "path": "src/micromouse_course/resource/micromouse_course",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/micromouse_course/rviz/course.rviz",
+      "sha256": "460c5ddcf246caccac04fa64157fd3d850a551bbe300ec4ae4205173719a4313"
+    },
+    {
+      "path": "src/micromouse_course/rviz/model.rviz",
+      "sha256": "36854e2a6e9930c94275c32c1d4cc9288f5ac15e4c216778dcadf0fc1b919237"
+    },
+    {
+      "path": "src/micromouse_course/scripts/build.sh",
+      "sha256": "d851964d3e988ee1cfbf8b77e8951e2151f9e1bdd57e30c6b81eeda435c681eb"
+    },
+    {
+      "path": "src/micromouse_course/scripts/check.sh",
+      "sha256": "0cad03e8586d5f1281640ad59ab3ae8c9a893028f5faf91b3d24a11165ab4c6d"
+    },
+    {
+      "path": "src/micromouse_course/scripts/environment_snapshot.sh",
+      "sha256": "627e497662785137a4fc79048ebd97fd71d50f5a9453ef67943efd1b199f276d"
+    },
+    {
+      "path": "src/micromouse_course/scripts/preflight.sh",
+      "sha256": "2ebc11d2ae491b5db905fa13a072d5e8c447408adc448a3be132b4a97dca9978"
+    },
+    {
+      "path": "src/micromouse_course/scripts/record_evidence.sh",
+      "sha256": "3e4f3f5073d4fcd1b3d8c3ba002738733831870ce451b7500510e0529fa02f3e"
+    },
+    {
+      "path": "src/micromouse_course/setup.cfg",
+      "sha256": "82da9539a38536b1c6de5cbb071fd5ef71a394a6625e48b3d766e751a342f6ff"
+    },
+    {
+      "path": "src/micromouse_course/setup.py",
+      "sha256": "924f00937a9456a0b399d7725fa3c0245774b8ddfc63a59296d56561150d70bd"
+    },
+    {
+      "path": "src/micromouse_course/test/test_core_algorithms.py",
+      "sha256": "894d224ed095702de8018faaf153e2255241ca1dfdd485a253c294ffe654c6c2"
+    },
+    {
+      "path": "src/micromouse_course/test/test_core_world_geometry.py",
+      "sha256": "fae4287469d30a1e2b0a8a8458b05842af99c7e09da13cc99a7137b1676d5d02"
+    },
+    {
+      "path": "src/micromouse_course/test/test_grid.py",
+      "sha256": "8e8fcd4cf505d6027b420f0dded32a7680b586262a7c8c3317441e8bae391f2a"
+    },
+    {
+      "path": "src/micromouse_course/test/test_integration_contract.py",
+      "sha256": "155e24336727f3d77bd816338d1eb4d868dcbb1bd38c2c9e9fb586b267c58ea5"
+    },
+    {
+      "path": "src/micromouse_course/test/test_metrics.py",
+      "sha256": "7cb185ba9dafc2908b763beda3e05533f3b85f8afdef4aefce43a2d7984491e9"
+    },
+    {
+      "path": "src/micromouse_course/test/test_runtime.py",
+      "sha256": "689168748c13dbb6b7f616705944a3bd6796df281916756f9555272803c0719d"
+    },
+    {
+      "path": "src/micromouse_course/test/test_world.py",
+      "sha256": "a7af6fae0cdfb177a6790b5345450a22d1d5f15e3868d6726df467b0884359b5"
+    },
+    {
+      "path": "src/micromouse_course/tools/analyse_runs.py",
+      "sha256": "68178f5d7044497018ea96373d69ce89db6843578e76e7e18bfab7dd65e8c63c"
+    },
+    {
+      "path": "src/micromouse_course/tools/check_wall_kinematics.py",
+      "sha256": "b6c857aa2729cfcd540dee6156c74349ce08cf364af95bc8938c9889765ed294"
+    },
+    {
+      "path": "src/micromouse_course/tools/generate_world.py",
+      "sha256": "f1684761cc0aeb57a3c038a24085dacc451d3882f8bc3f89ce5b3b9aa8a3b284"
+    },
+    {
+      "path": "src/micromouse_course/tools/package_submission.py",
+      "sha256": "fc25c1a17bd45f46134ba58395aae66bdb459912dac8093311791162c53e1604"
+    },
+    {
+      "path": "src/micromouse_course/tools/record_gnome.py",
+      "sha256": "34207f8bae44398b6fb8a549abd809e3c6d529baaf26237a7449ff7581d6ca4c"
+    },
+    {
+      "path": "src/micromouse_course/tools/run_trial.py",
+      "sha256": "bdb2adbe23ae8e7dc553752dd7c5304159f37790aca51c5ba9f350faca7dd532"
+    },
+    {
+      "path": "src/micromouse_course/urdf/burger.urdf.xacro",
+      "sha256": "365c8d22c9f35effd24cc0625fc87f5cf08bd0d17cd2f409659ab3656eb0e20c"
+    },
+    {
+      "path": "src/micromouse_course/urdf/建模说明.md",
+      "sha256": "c3a5afc783b38c009b2a8aa8f63c5414e965af25c83656682929f0e9ffa1868d"
+    },
+    {
+      "path": "src/micromouse_course/worlds/control_arena.world",
+      "sha256": "d8a2adc96bfbd4e730bb8ca1c2a7da90c6eb6710e67f9ec29bfd0602e856f58b"
+    },
+    {
+      "path": "src/micromouse_course/worlds/course_maze.world",
+      "sha256": "1d694bf1bc84f7386c639a9fb18969ffaf104aa63a0b5c6eba03e626b635797f"
+    },
+    {
+      "path": "src/micromouse_course/worlds/failure_loop.world",
+      "sha256": "ce054dcbe2611c26dbee2c5f52dbad5c179e0e17dda5239f2e139f0378446eac"
+    },
+    {
+      "path": "src/micromouse_course/worlds/maze_layout.json",
+      "sha256": "829f1afbda1a92d11f63b3801211bfdc415d6a30590e21c609b451621b56a521"
+    }
+  ]
+}
