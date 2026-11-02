@@ -1,4 +1,4 @@
-Python 3.10 语法检查通过，文件数： 31
+Python 3.10 语法检查通过，文件数： 32
 test_nonfinite_quaternion_is_rejected (test_core_algorithms.GeometryTests) ... ok
 test_nonunit_quaternion_is_normalized (test_core_algorithms.GeometryTests) ... ok
 test_wrap_crosses_pi_by_short_route (test_core_algorithms.GeometryTests) ... ok
@@ -141,6 +141,12 @@ test_future_stale_and_missing_samples_are_rejected (test_runtime.TestSampleFresh
 test_minimum_scan_discards_out_of_range_samples (test_runtime.TestSampleFreshness) ... ok
 test_nonfinite_time_is_not_fresh (test_runtime.TestSampleFreshness) ... ok
 test_paused_ros_clock_does_not_hide_wall_clock_timeout (test_runtime.TestSampleFreshness) ... ok
+test_context_closes_when_node_construction_fails (test_truth_shutdown.ShutdownTests) ... ok
+test_file_and_context_close_even_if_node_cleanup_fails (test_truth_shutdown.ShutdownTests) ... ok
+test_repeated_signal_does_not_interrupt_cleanup (test_truth_shutdown.ShutdownTests) ... ok
+test_sigint_finishes_current_callback_before_cleanup (test_truth_shutdown.ShutdownTests) ... ok
+test_sigterm_finishes_current_callback_before_cleanup (test_truth_shutdown.ShutdownTests) ... ok
+test_unexpected_runtime_error_is_not_hidden (test_truth_shutdown.ShutdownTests) ... ok
 test_all_obstacles_have_matching_collision_geometry (test_world.WorldTests) ... ok
 test_committed_assets_match_generator (test_world.WorldTests) ... ok
 test_every_passage_is_open_and_every_other_edge_has_a_wall (test_world.WorldTests) ... ok
@@ -149,15 +155,15 @@ test_maze_is_connected_tree (test_world.WorldTests) ... ok
 test_spawn_has_clearance_and_doorways_fit_burger (test_world.WorldTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 148 tests in 2.150s
+Ran 154 tests in 1.091s
 
 OK
 
 以上为源代码与算法检查，ROS2/Gazebo 实测按执行手册完成。
 Starting >>> micromouse_course
-Finished <<< micromouse_course [1.35s]
+Finished <<< micromouse_course [1.30s]
 
-Summary: 1 package finished [1.61s]
+Summary: 1 package finished [1.84s]
 机器人感知与控制综合实践 环境检查
 当前 Python：/usr/bin/python3
 [PASS] Ubuntu 22.04
@@ -202,7 +208,7 @@ Summary: 1 package finished [1.61s]
 [INFO] 激光传感器 hls_lfcd_lds：5 Hz，量程 0.120000 至 3.5 m
 [INFO] 控制定时器频率不等于扫描频率；新扫描到达前，控制器会持有上一帧数据。
 [PASS] Burger SDF 引用的本地 model:// 网格文件齐全
-官方运动学模型：/home/xhx/micromouse_course_ws/src/micromouse_course/urdf/burger.urdf.xacro
+官方运动学模型：/home/xhx/micromouse_revision_20261102_ws/src/micromouse_course/urdf/burger.urdf.xacro
 [PASS] URDF 根标签为 robot
 [PASS] URDF link base_footprint
 [PASS] URDF link base_link
@@ -219,12 +225,3 @@ Summary: 1 package finished [1.61s]
 [PASS] failure_loop.world 可解析
 检查结束：0 项失败，0 项提醒。
 静态环境检查通过；仍需启动仿真并实测 /clock、/odom、/scan、TF 和碰撞行为。
-robot name is: course_burger
----------- Successfully Parsed XML ---------------
-root Link: base_footprint has 1 child(ren)
-    child(1):  base_link
-        child(1):  caster_back_link
-        child(2):  imu_link
-        child(3):  base_scan
-        child(4):  wheel_left_link
-        child(5):  wheel_right_link

@@ -2,28 +2,27 @@
 
 ROS2 Humble 与 TurtleBot3 Burger 的地老鼠走迷宫课程工程，包含基础运动、雷达分区、左墙跟随、Pure Pursuit、里程计栅格建图和 A* 全局规划。
 
-作者：向浩轩、杨晟。项目以小组提供的初始思路和代码为基础，经 AI 辅助适配、复核和实验整理。分工与修改范围见 `docs/team.md` 和 `NOTICE.md`。
+作者：向浩轩、杨晟。根据小组补充分工说明，实验总体规划、Ubuntu 实操、大部分代码、调试和报告由两位成员分工完成；工程开发阶段使用 AI 辅助部分相关代码。具体范围、修改与已有复验依据见 TEAM.md 和 NOTICE.md。
 
 课程代码：`(2026-2027-1)-S0610350-04`；第三组；提交日期：2026年11月2日。真实仓库：<https://github.com/Bsnbj-nb/micromouse-ros2-course>。
 
 已在 VMware 中的 Ubuntu 22.04.5、ROS2 Humble、Gazebo 11.10.2、gazebo_ros 3.9.0、turtlebot3_description 2.3.6、turtlebot3_gazebo 2.3.8 和 RViz 11.2.29 实际构建与运行；148 项自动检查通过。原始 ROS 记录包含配置、轨迹、状态、扫描地图、真值与 rosbag。单元检查与真实动力学运行分别保存，失败轮次没有删除。
 
-2026年11月2日提交信息已确认。此处归档源码保留2026年10月31日实测版本；归档内两份说明文档的组号、班号占位以本页及 TEAM.md 为准。课程提交包已同步这两份说明，算法、配置、world、launch 和测试文件保持一致。
 
-## 下载完整源码
+## 当前源码与修订核验
 
-[完整源码包（仅 src）](micromouse-source.zip) 包含所有 Python 节点、world、launch、Xacro、参数、RViz 配置、测试及说明；解压后目录为 `src/micromouse_course`。源码包 SHA-256：
+本次归档已同步课程本地修订版的分工说明、退出修复、新增测试与 AI 辅助记录。源码包共 57 个文件，仅包含 `src/micromouse_course`，不含 build/install/log。
 
-`ab851fba256a73c45974c82b25c396c9420b616354db2be07f16fae6ac81867a`
+- [完整源码包](micromouse-source.zip)
+- [逐文件 SHA-256 清单](source-manifest.json)
+- [本次三项修订与 AI 辅助说明](revision_20261102.md)
+- [Ubuntu 构建与154项检查日志](ubuntu-validation.log)
+- [Ubuntu 新退出复验结果](shutdown-verification.json)
+- [既有逐轮实测指标](measured-results.csv)
 
-下载后可在 Ubuntu 中执行：
+源码 ZIP SHA-256：`45f10cf03f2c20b214b69b6a81f38a8123fb8ed07a5cc9047ab1cdc05edf745d`。
 
-```bash
-mkdir -p ~/micromouse_course_ws
-unzip micromouse-source.zip -d ~/micromouse_course_ws
-```
-
-[逐轮真实指标](measured-results.csv) 与 [最终构建检查日志](ubuntu-validation.log) 可供核对。表中 `completed=false` 包括无目标的观察实验和保留的旧参数失败轮次，应结合 `mode`、`fault` 和报告中的判据阅读。
+下载后将 ZIP 中的 `src` 解压到自己的 ROS 工作空间，再按下文构建。R01 的 156.8 s 是退出修复后的独立回归记录，不替换下文2026年10月31日的性能对比数据。旧 C17 完成迷宫后的异常记录保留；当前修复及新的成功退出证据分别编号。
 
 ## 环境
 
@@ -168,7 +167,7 @@ python3 src/micromouse_course/tools/run_trial.py R03 course_maze global --record
 
 ## 模块分工
 
-向浩轩负责系统集成、场景/模型接入、建图与 A* 规划；杨晟负责运动控制、扫描处理、墙跟随与算法比较；共同核对整体接口和证据。小组后续实际人工修改、复测日期和验收结论在 `docs/team.md` 据实补充。
+向浩轩负责总体方案与系统集成、Ubuntu 环境、场景/模型和建图规划；杨晟负责运动控制、扫描处理、墙跟随及策略比较；两人共同完成实验规划、集成联调、证据核对与报告编写。具体修改及已有复验记录见 TEAM.md；运行日志不含操作者字段，人员归属按小组补充说明记录。
 
 ## 参考来源
 
@@ -181,3 +180,15 @@ python3 src/micromouse_course/tools/run_trial.py R03 course_maze global --record
 ## 开源许可与课程信息
 
 仓库：<https://github.com/Bsnbj-nb/micromouse-ros2-course>。本项目原创代码按 MIT 许可证发布，已由项目提供者确认；第三方模型与依赖遵守其各自许可证。课程号为 (2026-2027-1)-S0610350-04，第三组，提交日期为 2026年11月2日。
+
+## 本次核查补充
+
+三组墙跟随对比中，C10/C11开启建图，C15/C16和C17/C18关闭建图；每组内部设置匹配，但六轮并非全部启动条件一致。C17完成运动后，truth_recorder在退出阶段仍报RuntimeError；clean_shutdown只表示轨迹记录器关闭，不保证所有进程无异常。本次仅修改说明文档，没有新增Gazebo实验，也没有更新公开仓库或虚拟机中的文件。
+
+上一轮核查辅助说明（保留原记录）：本轮提交材料的要求核对、证据一致性检查和局部说明文字修订使用AI辅助；主体工作归属按小组补充说明记录。未新增Ubuntu/Gazebo实验，未改变原始数据。
+
+## 2026年11月2日追加修订：退出修复及交付更新（AI 辅助）
+
+此前说明及 C17 归档记录保留，以下为另一次修订。AI 编写了 `truth_recorder.py` 的退出时序修复和 6 项回归测试，在用户 Ubuntu 虚拟机中自动构建、运行并整理新证据；AI 还协助最终 Word 的原生 PDF 导出、字体核对，以及公开仓库说明、源码包和校验清单同步。新测试没有记作组员的人工操作。
+
+Ubuntu 中 154 项检查通过。R01 新完整迷宫运行用时 156.8 s（仿真时间），记录节点正常退出；R02 在运动中由脚本发送相当于 Ctrl+C 的 SIGINT，正常退出且任务未完成；另外 12 次真实 ROS DDS 通信下的 SIGINT/SIGTERM 退出测试均返回 0，无 Traceback。后者使用专用消息发布器，不是 12 次迷宫仿真。详见 `revision_20261102.md`。

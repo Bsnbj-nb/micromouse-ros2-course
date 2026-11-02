@@ -1,6 +1,6 @@
 {
-  "source_zip_sha256": "ab851fba256a73c45974c82b25c396c9420b616354db2be07f16fae6ac81867a",
-  "file_count": 55,
+  "source_zip_sha256": "45f10cf03f2c20b214b69b6a81f38a8123fb8ed07a5cc9047ab1cdc05edf745d",
+  "file_count": 57,
   "files": [
     {
       "path": "src/micromouse_course/.gitignore",
@@ -15,8 +15,12 @@
       "sha256": "2db7f75d15d86b2ed8c1810f1e0ecc79b783eb7bbaf61e582f433c0461f3583c"
     },
     {
+      "path": "src/micromouse_course/docs/revision_20261102.md",
+      "sha256": "92cc1143e4896c7355de53a592880f67d84bf22f21d7513bf7e70c684e6d0b55"
+    },
+    {
       "path": "src/micromouse_course/docs/team.md",
-      "sha256": "ddc94fcd0b588364a008d45e0cdd1669c240f933c39a01fef0de392be55bd628"
+      "sha256": "8214f2b5479380959e1ed26a225687c532ceca31c8a6168b80d8311a1b5baef5"
     },
     {
       "path": "src/micromouse_course/launch/course.launch.py",
@@ -88,11 +92,11 @@
     },
     {
       "path": "src/micromouse_course/micromouse_course/truth_recorder.py",
-      "sha256": "462a657a8e19c96029a5ee29ef9ede22cb9ae6a3adc09699cf9ec2d4ba77376f"
+      "sha256": "294f5685e2aa1f20d3cd13354dad4e0b39a4f9df9d3b164afb89f59e10d41963"
     },
     {
       "path": "src/micromouse_course/NOTICE.md",
-      "sha256": "56f228fc1bf0083bcf3118a4331f0a4b082e3ea5b51dc955a80985a1547f901b"
+      "sha256": "c261a9dff6b03a2686eb3a098e57f8b64de6f05cb6471d79b96ee55a17aaab05"
     },
     {
       "path": "src/micromouse_course/package.xml",
@@ -100,7 +104,7 @@
     },
     {
       "path": "src/micromouse_course/readme.md",
-      "sha256": "01607b8aba5b099400a387e73ae6d284d9dc50dead85470b75aad4ba4da67dea"
+      "sha256": "51ab1d7449fdd6fcb896f6c6059fa83c2be89c31de7176973b8dfd79fe1bff03"
     },
     {
       "path": "src/micromouse_course/resource/micromouse_course",
@@ -169,6 +173,10 @@
     {
       "path": "src/micromouse_course/test/test_runtime.py",
       "sha256": "689168748c13dbb6b7f616705944a3bd6796df281916756f9555272803c0719d"
+    },
+    {
+      "path": "src/micromouse_course/test/test_truth_shutdown.py",
+      "sha256": "60f2eb14021a2110ccb2b5ff1e09b4473c666f43bab1eeae90d885bbf7498ae4"
     },
     {
       "path": "src/micromouse_course/test/test_world.py",

@@ -1,0 +1,230 @@
+Python 3.10 语法检查通过，文件数： 31
+test_nonfinite_quaternion_is_rejected (test_core_algorithms.GeometryTests) ... ok
+test_nonunit_quaternion_is_normalized (test_core_algorithms.GeometryTests) ... ok
+test_wrap_crosses_pi_by_short_route (test_core_algorithms.GeometryTests) ... ok
+test_wrap_many_revolutions (test_core_algorithms.GeometryTests) ... ok
+test_zero_quaternion_is_rejected (test_core_algorithms.GeometryTests) ... ok
+test_arc_length_continues_around_corner (test_core_algorithms.PurePursuitTests) ... ok
+test_closed_path_does_not_finish_at_initial_point (test_core_algorithms.PurePursuitTests) ... ok
+test_duplicate_vertices_are_removed (test_core_algorithms.PurePursuitTests) ... ok
+test_endpoint_stops_and_latches (test_core_algorithms.PurePursuitTests) ... ok
+test_projection_advances_monotonically (test_core_algorithms.PurePursuitTests) ... ok
+test_pursuit_tracks_polyline_in_kinematic_model (test_core_algorithms.PurePursuitTests) ... ok
+test_short_closed_path_does_not_finish_at_start (test_core_algorithms.PurePursuitTests) ... ok
+test_single_point_path_is_handled (test_core_algorithms.PurePursuitTests) ... ok
+test_start_near_end_does_not_skip_start (test_core_algorithms.PurePursuitTests) ... ok
+test_target_interpolates_inside_segment (test_core_algorithms.PurePursuitTests) ... ok
+test_angle_min_not_zero (test_core_algorithms.ScanTests) ... ok
+test_clockwise_scan (test_core_algorithms.ScanTests) ... ok
+test_invalid_metadata (test_core_algorithms.ScanTests) ... ok
+test_invalid_outliers_do_not_become_obstacles (test_core_algorithms.ScanTests) ... ok
+test_nan_sector_is_not_clear (test_core_algorithms.ScanTests) ... ok
+test_parallel_left_wall_has_zero_heading (test_core_algorithms.ScanTests) ... ok
+test_partial_scan_cannot_supply_missing_side (test_core_algorithms.ScanTests) ... ok
+test_positive_inf_is_clear_within_range (test_core_algorithms.ScanTests) ... ok
+test_adaptive_speed_reduces_near_obstacle (test_core_algorithms.WallFollowerTests) ... ok
+test_clock_reset_requires_controller_reset (test_core_algorithms.WallFollowerTests) ... ok
+test_corner_advance_cannot_continue_forever (test_core_algorithms.WallFollowerTests) ... ok
+test_dead_end_chooses_consistent_right_uturn (test_core_algorithms.WallFollowerTests) ... ok
+test_fault_requires_explicit_reset (test_core_algorithms.WallFollowerTests) ... ok
+test_front_wall_with_right_open_starts_right_turn (test_core_algorithms.WallFollowerTests) ... ok
+test_left_opening_cannot_immediately_retrigger (test_core_algorithms.WallFollowerTests) ... ok
+test_left_opening_requires_debounce (test_core_algorithms.WallFollowerTests) ... ok
+test_left_turn_waits_until_car_has_passed_corner (test_core_algorithms.WallFollowerTests) ... ok
+test_missing_scan_stops (test_core_algorithms.WallFollowerTests) ... ok
+test_negative_distance_error_turns_right (test_core_algorithms.WallFollowerTests) ... ok
+test_observed_wall_and_distance_rearm_left_turn (test_core_algorithms.WallFollowerTests) ... ok
+test_positive_distance_error_turns_left (test_core_algorithms.WallFollowerTests) ... ok
+test_reappearing_wall_cancels_corner_advance (test_core_algorithms.WallFollowerTests) ... ok
+test_reused_scan_cannot_satisfy_opening_debounce (test_core_algorithms.WallFollowerTests) ... ok
+test_turn_completion_waits_for_scan_after_rotation (test_core_algorithms.WallFollowerTests) ... ok
+test_turn_crosses_pi_with_correct_accumulated_angle (test_core_algorithms.WallFollowerTests) ... ok
+test_turn_timeout_latches_stop (test_core_algorithms.WallFollowerTests) ... ok
+test_bad_odometry_stops (test_core_algorithms.WaypointTests) ... ok
+test_bad_parameter_rejected (test_core_algorithms.WaypointTests) ... ok
+test_p_controller_converges_in_kinematic_model (test_core_algorithms.WaypointTests) ... ok
+test_point_rotates_before_translation (test_core_algorithms.WaypointTests) ... ok
+test_repeated_waypoints_finish (test_core_algorithms.WaypointTests) ... ok
+test_terminal_state_stays_stopped (test_core_algorithms.WaypointTests) ... ok
+test_velocity_is_limited (test_core_algorithms.WaypointTests) ... ok
+test_waypoints_are_not_skipped_by_nearest_point (test_core_algorithms.WaypointTests) ... ok
+test_adaptive_reaches_exit_without_disc_collision (test_core_world_geometry.WorldGeometryTests) ... ok
+test_baseline_reaches_exit_without_disc_collision (test_core_world_geometry.WorldGeometryTests) ... ok
+test_bresenham_directions (test_grid.TestGridGeometry) ... ok
+test_coordinate_round_trip_and_negative_origin (test_grid.TestGridGeometry) ... ok
+test_invalid_geometry (test_grid.TestGridGeometry) ... ok
+test_row_major_layout (test_grid.TestGridGeometry) ... ok
+test_corrupt_saved_map_is_rejected (test_grid.TestMapPersistence) ... ok
+test_empty_map_is_not_saved (test_grid.TestMapPersistence) ... ok
+test_pgm_y_axis_is_flipped (test_grid.TestMapPersistence) ... ok
+test_round_trip_preserves_values_frame_resolution_and_origin (test_grid.TestMapPersistence) ... ok
+test_endpoint_outside_map_is_clipped_and_not_occupied (test_grid.TestMapping) ... ok
+test_hit_marks_endpoint_only_and_keeps_unseen_unknown (test_grid.TestMapping) ... ok
+test_hit_wins_over_free_for_same_cell_in_one_scan (test_grid.TestMapping) ... ok
+test_infinite_return_clears_without_inventing_wall (test_grid.TestMapping) ... ok
+test_invalid_samples_do_not_create_free_space (test_grid.TestMapping) ... ok
+test_log_odds_are_bounded (test_grid.TestMapping) ... ok
+test_negative_angle_increment (test_grid.TestMapping) ... ok
+test_range_max_is_no_hit (test_grid.TestMapping) ... ok
+test_repeated_beams_do_not_overweight_a_cell_within_one_scan (test_grid.TestMapping) ... ok
+test_sensor_outside_map_is_rejected (test_grid.TestMapping) ... ok
+test_yaw_transform_rotates_rays (test_grid.TestMapping) ... ok
+test_blocked_start_or_goal_is_rejected (test_grid.TestPlanning) ... ok
+test_diagonal_corner_cut_is_forbidden (test_grid.TestPlanning) ... ok
+test_free_space_path_reaches_goal_and_uses_cell_centers (test_grid.TestPlanning) ... ok
+test_gap_in_wall_is_used (test_grid.TestPlanning) ... ok
+test_inflation_accounts_for_occupied_cell_area (test_grid.TestPlanning) ... ok
+test_input_map_is_not_modified (test_grid.TestPlanning) ... ok
+test_invalid_occupancy_array_or_thresholds_are_rejected (test_grid.TestPlanning) ... ok
+test_outside_or_nonfinite_goal_is_rejected (test_grid.TestPlanning) ... ok
+test_robot_must_fit_inside_map_boundary (test_grid.TestPlanning) ... ok
+test_same_start_goal_is_single_point (test_grid.TestPlanning) ... ok
+test_solid_wall_is_unreachable (test_grid.TestPlanning) ... ok
+test_uncertain_observation_is_not_assumed_free (test_grid.TestPlanning) ... ok
+test_unknown_is_blocked_unless_explicitly_allowed (test_grid.TestPlanning) ... ok
+test_empty_path_cancels_a_path_cached_before_odometry (test_integration_contract.ControllerPathCancellationTests) ... ok
+test_nonfinite_path_cannot_leave_old_controller_running (test_integration_contract.ControllerPathCancellationTests) ... ok
+test_valid_path_is_transformed_from_odom_to_task_coordinates (test_integration_contract.ControllerPathCancellationTests) ... ok
+test_wrong_frame_cancels_cached_and_running_path (test_integration_contract.ControllerPathCancellationTests) ... ok
+test_launched_executables_have_installed_python_entry_points (test_integration_contract.PackageContractTests) ... ok
+test_mapping_planning_and_rviz_share_odom_frame (test_integration_contract.PackageContractTests) ... ok
+test_only_controller_can_publish_robot_velocity (test_integration_contract.PackageContractTests) ... ok
+test_yaml_node_names_and_parameters_match_launched_nodes (test_integration_contract.PackageContractTests) ... ok
+test_bad_odometry_revokes_path (test_integration_contract.PlannerCancellationTests) ... ok
+test_invalid_goal_cancels_old_path_and_old_goal (test_integration_contract.PlannerCancellationTests) ... ok
+test_invalid_map_discards_previous_map_and_path (test_integration_contract.PlannerCancellationTests) ... ok
+test_map_origin_change_revokes_path (test_integration_contract.PlannerCancellationTests) ... ok
+test_odometry_time_reset_revokes_path (test_integration_contract.PlannerCancellationTests) ... ok
+test_actual_rows_produce_cross_track_error_and_stop_counts (test_metrics.TestRunAnalysis) ... ok
+test_different_path_does_not_create_comparison_pair (test_metrics.TestRunAnalysis) ... ok
+test_different_scene_does_not_create_comparison_pair (test_metrics.TestRunAnalysis) ... ok
+test_different_speed_does_not_create_comparison_pair (test_metrics.TestRunAnalysis) ... ok
+test_failure_is_not_reported_as_zero_second_completion (test_metrics.TestRunAnalysis) ... ok
+test_incomplete_run_is_warned_and_skipped (test_metrics.TestRunAnalysis) ... ok
+test_leftover_failure_duration_is_ignored_with_note (test_metrics.TestRunAnalysis) ... ok
+test_map_files_and_unrelated_directories_are_ignored (test_metrics.TestRunAnalysis) ... ok
+test_mismatched_summary_or_false_success_is_rejected (test_metrics.TestRunAnalysis) ... ok
+test_no_data_fails_without_writing_sample_csv (test_metrics.TestRunAnalysis) ... ok
+test_output_csv_has_blank_failure_time_and_protects_sources (test_metrics.TestRunAnalysis) ... ok
+test_same_setup_pairs_waypoints_and_pure_pursuit (test_metrics.TestRunAnalysis) ... ok
+test_single_point_or_missing_reference_has_no_rmse (test_metrics.TestRunAnalysis) ... ok
+test_close_flushes_all_rows_and_is_idempotent (test_metrics.TestRunRecorder) ... ok
+test_distance_and_command_variation_use_recorded_samples (test_metrics.TestRunRecorder) ... ok
+test_failure_has_no_completion_time (test_metrics.TestRunRecorder) ... ok
+test_goal_already_at_start_has_valid_zero_completion_time (test_metrics.TestRunRecorder) ... ok
+test_metadata_preserves_test_origin_and_path (test_metrics.TestRunRecorder) ... ok
+test_minimum_range_only_uses_valid_finite_observations (test_metrics.TestRunRecorder) ... ok
+test_missing_pose_does_not_invent_sample (test_metrics.TestRunRecorder) ... ok
+test_open_loop_completion_does_not_claim_coordinate_goal (test_metrics.TestRunRecorder) ... ok
+test_startup_wait_is_separate_from_completion_time (test_metrics.TestRunRecorder) ... ok
+test_alignment_preserves_distance (test_runtime.TestFrameAlignment) ... ok
+test_initial_pose_maps_to_configured_spawn (test_runtime.TestFrameAlignment) ... ok
+test_quarter_turn_changes_translation_axes (test_runtime.TestFrameAlignment) ... ok
+test_round_trip_for_different_origins_and_headings (test_runtime.TestFrameAlignment) ... ok
+test_fast_revisits_are_not_counted_again (test_runtime.TestLoopMonitor) ... ok
+test_four_complete_visits_with_travel_are_detected (test_runtime.TestLoopMonitor) ... ok
+test_invalid_configuration_is_rejected (test_runtime.TestLoopMonitor) ... ok
+test_stationary_pose_does_not_count_repeated_visits (test_runtime.TestLoopMonitor) ... ok
+test_turning_in_place_is_not_a_translation_loop (test_runtime.TestLoopMonitor) ... ok
+test_backwards_clock_stops (test_runtime.TestOpenLoopProgram) ... ok
+test_first_tick_defines_time_origin (test_runtime.TestOpenLoopProgram) ... ok
+test_invalid_duration_or_velocity_is_rejected (test_runtime.TestOpenLoopProgram) ... ok
+test_segment_boundaries_and_final_stop (test_runtime.TestOpenLoopProgram) ... ok
+test_collinear_reduction_preserves_corner (test_runtime.TestPathUtilities) ... ok
+test_collinear_reduction_preserves_u_turn (test_runtime.TestPathUtilities) ... ok
+test_nonfinite_path_coordinate_is_rejected (test_runtime.TestPathUtilities) ... ok
+test_repeated_points_are_removed_but_endpoint_is_kept (test_runtime.TestPathUtilities) ... ok
+test_unpack_rejects_missing_or_nonfinite_coordinates (test_runtime.TestPathUtilities) ... ok
+test_unpack_xy_pairs (test_runtime.TestPathUtilities) ... ok
+test_fresh_sample_and_exact_boundaries (test_runtime.TestSampleFreshness) ... ok
+test_future_stale_and_missing_samples_are_rejected (test_runtime.TestSampleFreshness) ... ok
+test_minimum_scan_discards_out_of_range_samples (test_runtime.TestSampleFreshness) ... ok
+test_nonfinite_time_is_not_fresh (test_runtime.TestSampleFreshness) ... ok
+test_paused_ros_clock_does_not_hide_wall_clock_timeout (test_runtime.TestSampleFreshness) ... ok
+test_all_obstacles_have_matching_collision_geometry (test_world.WorldTests) ... ok
+test_committed_assets_match_generator (test_world.WorldTests) ... ok
+test_every_passage_is_open_and_every_other_edge_has_a_wall (test_world.WorldTests) ... ok
+test_left_hand_rule_reaches_real_exit (test_world.WorldTests) ... ok
+test_maze_is_connected_tree (test_world.WorldTests) ... ok
+test_spawn_has_clearance_and_doorways_fit_burger (test_world.WorldTests) ... ok
+
+----------------------------------------------------------------------
+Ran 148 tests in 2.150s
+
+OK
+
+以上为源代码与算法检查，ROS2/Gazebo 实测按执行手册完成。
+Starting >>> micromouse_course
+Finished <<< micromouse_course [1.35s]
+
+Summary: 1 package finished [1.61s]
+机器人感知与控制综合实践 环境检查
+当前 Python：/usr/bin/python3
+[PASS] Ubuntu 22.04
+[PASS] ROS_DISTRO=humble
+[PASS] ros2：/opt/ros/humble/bin/ros2
+[PASS] colcon：/usr/bin/colcon
+[PASS] gazebo：/usr/bin/gazebo
+[PASS] gzserver：/usr/bin/gzserver
+[PASS] Gazebo multi-robot simulator, version 11.10.2
+[INFO] gazebo --version exit status: 255
+[PASS] Python 模块 rclpy 可导入
+[PASS] Python 模块 yaml 可导入
+[PASS] Python 模块 numpy 可导入
+[PASS] Python 模块 ament_index_python 可导入
+[PASS] Python 模块 xacro 可导入
+[PASS] ROS2 包 gazebo_ros
+[PASS] ROS2 包 gazebo_plugins
+[PASS] ROS2 包 gazebo_msgs
+[PASS] ROS2 包 xacro
+[PASS] ROS2 包 turtlebot3_gazebo
+[PASS] ROS2 包 turtlebot3_description
+[PASS] ROS2 包 turtlebot3_msgs
+[PASS] ROS2 包 robot_state_publisher
+[PASS] ROS2 包 rviz2
+[PASS] ROS2 包 tf2_ros
+[PASS] ROS2 包 nav_msgs
+[PASS] ROS2 包 sensor_msgs
+[PASS] ROS2 包 geometry_msgs
+[PASS] ROS2 包 std_msgs
+[PASS] ROS2 包 std_srvs
+官方物理模型：/opt/ros/humble/share/turtlebot3_gazebo/models/turtlebot3_burger/model.sdf
+[PASS] SDF 插件 libgazebo_ros_diff_drive.so
+[PASS] SDF 插件 libgazebo_ros_ray_sensor.so
+[PASS] SDF 插件 libgazebo_ros_joint_state_publisher.so
+[PASS] odometry_frame=odom，要求 odom
+[PASS] robot_base_frame=base_footprint，要求 base_footprint
+[INFO] SDF odometry_source=未显式设置
+[INFO] 世界坐标与 odom 的关系以 launch 所用模型和首次里程计读数为准。
+[PASS] publish_odom=true
+[PASS] publish_odom_tf=true
+[PASS] 激光坐标系=base_scan，要求 base_scan
+[INFO] 激光传感器 hls_lfcd_lds：5 Hz，量程 0.120000 至 3.5 m
+[INFO] 控制定时器频率不等于扫描频率；新扫描到达前，控制器会持有上一帧数据。
+[PASS] Burger SDF 引用的本地 model:// 网格文件齐全
+官方运动学模型：/home/xhx/micromouse_course_ws/src/micromouse_course/urdf/burger.urdf.xacro
+[PASS] URDF 根标签为 robot
+[PASS] URDF link base_footprint
+[PASS] URDF link base_link
+[PASS] URDF link base_scan
+[PASS] URDF link wheel_left_link
+[PASS] URDF link wheel_right_link
+[PASS] URDF joint 数量：6
+[PASS] URDF link/visual 数量：4
+[PASS] URDF link/collision 数量：5
+[PASS] URDF link/inertial 数量：5
+[PASS] Burger URDF 引用的 package:// 网格文件齐全
+[PASS] course_maze.world 可解析
+[PASS] control_arena.world 可解析
+[PASS] failure_loop.world 可解析
+检查结束：0 项失败，0 项提醒。
+静态环境检查通过；仍需启动仿真并实测 /clock、/odom、/scan、TF 和碰撞行为。
+robot name is: course_burger
+---------- Successfully Parsed XML ---------------
+root Link: base_footprint has 1 child(ren)
+    child(1):  base_link
+        child(1):  caster_back_link
+        child(2):  imu_link
+        child(3):  base_scan
+        child(4):  wheel_left_link
+        child(5):  wheel_right_link

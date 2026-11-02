@@ -1,0 +1,166 @@
+{
+  "scope": "AI-assisted automated verification in the user Ubuntu VM",
+  "manual_student_run": false,
+  "started_local": "2026-11-02T16:35:59+0800",
+  "source_sha256": "294f5685e2aa1f20d3cd13354dad4e0b39a4f9df9d3b164afb89f59e10d41963",
+  "checks": [
+    {
+      "case": "full_maze_normal_end",
+      "runner_exit": 0,
+      "task_completed": true,
+      "summary": {
+        "mode": "wall_basic",
+        "samples": 1011,
+        "task_completed": true,
+        "goal_reached": true,
+        "completion_time_sim_s": 156.8,
+        "startup_wait_sim_s": 0.09999999999999998,
+        "path_length_odom_m": 15.534948720122202,
+        "minimum_valid_scan_range_m": 0.23362340033054352,
+        "angular_command_total_variation": 40.17948237667867,
+        "last_state": "DONE",
+        "last_fault": "",
+        "evidence": "ROS topic samples from this run; scan range is not body clearance or collision count",
+        "clean_shutdown": true
+      },
+      "truth_recorder_clean_exit": true,
+      "traceback": false,
+      "launch_process_errors": false,
+      "passed": true
+    },
+    {
+      "case": "SIGINT_during_motion",
+      "signal_sender": "AI verification script, equivalent to Ctrl+C; not human operation",
+      "moving_before_interrupt": true,
+      "launch_exit": 0,
+      "shutdown_wall_seconds": 0.2674488920000613,
+      "task_completed": false,
+      "truth_recorder_clean_exit": true,
+      "traceback": false,
+      "launch_process_errors": false,
+      "passed": true
+    },
+    {
+      "case": "real_DDS_signal_stress",
+      "index": 1,
+      "signal": "SIGINT",
+      "received_messages_before_signal": true,
+      "csv_samples": 20,
+      "exit_code": 0,
+      "traceback": false,
+      "passed": true
+    },
+    {
+      "case": "real_DDS_signal_stress",
+      "index": 2,
+      "signal": "SIGTERM",
+      "received_messages_before_signal": true,
+      "csv_samples": 20,
+      "exit_code": 0,
+      "traceback": false,
+      "passed": true
+    },
+    {
+      "case": "real_DDS_signal_stress",
+      "index": 3,
+      "signal": "SIGINT",
+      "received_messages_before_signal": true,
+      "csv_samples": 20,
+      "exit_code": 0,
+      "traceback": false,
+      "passed": true
+    },
+    {
+      "case": "real_DDS_signal_stress",
+      "index": 4,
+      "signal": "SIGTERM",
+      "received_messages_before_signal": true,
+      "csv_samples": 20,
+      "exit_code": 0,
+      "traceback": false,
+      "passed": true
+    },
+    {
+      "case": "real_DDS_signal_stress",
+      "index": 5,
+      "signal": "SIGINT",
+      "received_messages_before_signal": true,
+      "csv_samples": 20,
+      "exit_code": 0,
+      "traceback": false,
+      "passed": true
+    },
+    {
+      "case": "real_DDS_signal_stress",
+      "index": 6,
+      "signal": "SIGTERM",
+      "received_messages_before_signal": true,
+      "csv_samples": 20,
+      "exit_code": 0,
+      "traceback": false,
+      "passed": true
+    },
+    {
+      "case": "real_DDS_signal_stress",
+      "index": 7,
+      "signal": "SIGINT",
+      "received_messages_before_signal": true,
+      "csv_samples": 20,
+      "exit_code": 0,
+      "traceback": false,
+      "passed": true
+    },
+    {
+      "case": "real_DDS_signal_stress",
+      "index": 8,
+      "signal": "SIGTERM",
+      "received_messages_before_signal": true,
+      "csv_samples": 20,
+      "exit_code": 0,
+      "traceback": false,
+      "passed": true
+    },
+    {
+      "case": "real_DDS_signal_stress",
+      "index": 9,
+      "signal": "SIGINT",
+      "received_messages_before_signal": true,
+      "csv_samples": 20,
+      "exit_code": 0,
+      "traceback": false,
+      "passed": true
+    },
+    {
+      "case": "real_DDS_signal_stress",
+      "index": 10,
+      "signal": "SIGTERM",
+      "received_messages_before_signal": true,
+      "csv_samples": 20,
+      "exit_code": 0,
+      "traceback": false,
+      "passed": true
+    },
+    {
+      "case": "real_DDS_signal_stress",
+      "index": 11,
+      "signal": "SIGINT",
+      "received_messages_before_signal": true,
+      "csv_samples": 20,
+      "exit_code": 0,
+      "traceback": false,
+      "passed": true
+    },
+    {
+      "case": "real_DDS_signal_stress",
+      "index": 12,
+      "signal": "SIGTERM",
+      "received_messages_before_signal": true,
+      "csv_samples": 20,
+      "exit_code": 0,
+      "traceback": false,
+      "passed": true
+    }
+  ],
+  "all_passed": true,
+  "finished_local": "2026-11-02T16:39:03+0800"
+}
